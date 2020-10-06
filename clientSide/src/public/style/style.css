@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body, body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    height: 100vh;
+}
+
+.sidebar-container{
+    background-color: #281d59;
+    color: #FFFFFF;
+}
+.brand > img {
+    width: 290px;
+    height: 200px;
+}
+
+.users{
+    margin: 0 1.2rem;
+}
+.users > h2{
+    font-size: 1.4rem;
+    width: 90%;
+    padding: 0.7rem 0.5rem;
+    margin: 2rem 0;
+    border-top: dotted 4px #fdffd7;
+    border-bottom: dotted 4px #fdffd7;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container{
+    display: grid;
+    grid-template-rows: 110px 1fr 60px;
+}
+.chat-details{
+    display: block;
+    padding: 1.5rem 2rem 1rem 2rem;
+    border-bottom: solid 0.5px #d3d3d3;
+}
+.chat-details > h1{
+    margin-bottom: 0.7rem;
+}
+.chat-details > span {
+    color: gray;
+}
+
+.message-input-container{
+    padding: 0;
+}
+.message-form{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+.message-form > input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0.8rem;
+    background-color: #e4e4e4;
+    color: #292929;
+}
+.message-form > button{
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: #262563;
+    color: #FFFFFF;
+}
